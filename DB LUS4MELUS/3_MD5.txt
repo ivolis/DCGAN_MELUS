@@ -1,0 +1,137 @@
+This is the Checksum Folders export as a text file:
+
+The following Source Folder and all of it's subdirectories have been scanned for files. Every file found is listed below, including it's checksum.
+
+Source Folder: "/Users/fabianacquaticci/Desktop/Regular LUS dcm"
+
+The algorithm used to create the checksums was: "MD5".
+
+The Source Folder and it's subdirectories contained 124 files..
+
+These files have been found:
+
+check = "", name = "NL006-17.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="23610136c0547da24d682fa5731b6dde".
+check = "", name = "NL005-19.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="09435011a35c2737067070480f379a60".
+check = "", name = "NL005-15.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="6fccd80e0b2e810787bf951620f5aba8".
+check = "", name = "NL004-17.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="275f09fc2d9c2543c25a23ad4d03e788".
+check = "", name = "NL004-31.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="c482af65687ce2f451dd115f3d0acc5b".
+check = "", name = "NL006-3.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="f7bd900bdeb432fe08d3e097480d8062".
+check = "", name = "NL004-30.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="318672a8d2f7b1afb8412cbbe903da7d".
+check = "", name = "NL005-5.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="0adb482366c9cea369f791429f66dbac".
+check = "", name = "NL005-7.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="2be03e08c5c31ce089e82e25d7bc51f1".
+check = "", name = "NL005-25.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="542136f85fd154f461e108ba55f697a5".
+check = "", name = "NL004-25.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="834348930f8a57f6e76ce5f6e0bf6905".
+check = "", name = "NL006-15.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="a635276c668d0130be634985cc3e34e4".
+check = "", name = "NL005-17.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="978607ca47fbd8b34819bc5f7807af94".
+check = "", name = "NL004-58.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="310a3f156de8f43a2760baf959ee0886".
+check = "", name = "NL005-33.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="b5ad0014ebcb7f3da64393b71e2ca8b7".
+check = "", name = "NL004-3.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="a93ef5b96420a5609542e8b253cca40d".
+check = "", name = "NL006-6.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="cec7060eeb460f71a3dc946539674eac".
+check = "", name = "NL005-22.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="4405014aaff19c8e9a4d02c868b323f3".
+check = "", name = "NL004-41.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="a75b6bbc00c334b7c1f3fa04ec54ba3e".
+check = "", name = "NL006-26.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="61cc9cd49b86204adc701735c3f25659".
+check = "", name = "NL006-9.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="aef6d1d6abdd51a35834a3d90ee1f064".
+check = "", name = "NL005-9.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="9297b288db46b0c6c33e169ac92ecc49".
+check = "", name = "NL006-11.dcm", relative path = "/", size in bytes = "394218", better readable size = "394 KB", checksum="fc43712ded92bfef9f8db52195b5da74".
+check = "", name = "NL004-2.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="d3a7339c2401adf3d0b75313e2ce5191".
+check = "", name = "NL004-10.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="cbfb59398184ac810885956b95ba7164".
+check = "", name = "NL005-8.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="6761ba52ebf0fb365cc5428c24b2bf25".
+check = "", name = "NL004-35.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="359c1f97c2a7e1fd1f976cb62ea931a5".
+check = "", name = "NL004-43.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="e4a7c07cc4f30e3fac5402233325e353".
+check = "", name = "NL004-1.dcm", relative path = "/", size in bytes = "394210", better readable size = "394 KB", checksum="f1f7aaa3b66ecd91d32ba8f5201b1731".
+check = "", name = "NL005-24.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="fbd49dddd8d9e174f17314875e715324".
+check = "", name = "NL006-20.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="23a77004f2ddb90c961365226a5fed2a".
+check = "", name = "NL005-18.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="9f2664d4e05f8b0cbca281ffc7b43255".
+check = "", name = "NL004-28.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="bb1ae6b74d9cbec88bb8a2b68ef7e9ae".
+check = "", name = "NL005-29.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="fc9d23fcd927ca2388ddc14fb5b7c41c".
+check = "", name = "NL004-45.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="97f05197192edbe3d400466efedf4828".
+check = "", name = "NL005-4.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="812e2588870ba05620eeeb742d6bddc8".
+check = "", name = "NL004-54.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="fe47438be97518ea96ae530a3996cc85".
+check = "", name = "NL006-23.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="0c2db4a7911d0d425e0b24f22a1272ca".
+check = "", name = "NL004-5.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="ba53f0a65a6b96cc37f22693e4c4b50d".
+check = "", name = "NL006-27.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="c305267dfd761da1f7c21be093851b88".
+check = "", name = "NL004-55.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="936fc2f9ee2a875a9aa09d48761cb9cf".
+check = "", name = "NL004-37.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="4f4cbd37697dcb00d60a0ebfeb7db239".
+check = "", name = "NL006-12.dcm", relative path = "/", size in bytes = "394218", better readable size = "394 KB", checksum="0b397927c33a9bfeb5017f060206afbf".
+check = "", name = "NL004-42.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="99f8b49e5cb8bf1bc20fe824aa789998".
+check = "", name = "NL004-14.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="d16b1921a54d673229bec86d36f70bf7".
+check = "", name = "NL006-18.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="f9b677052dba20820525cb7f954cd4c0".
+check = "", name = "NL004-27.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="f3a84b60829e72af2f0245df1eeb67df".
+check = "", name = "NL005-21.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="dc39d8df3dff3a22796c58cc71351412".
+check = "", name = "NL004-15.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="9fd661b1d3caf823b11df40b04b86109".
+check = "", name = "NL004-32.dcm", relative path = "/", size in bytes = "394212", better readable size = "394 KB", checksum="482f157965668eb46439fd205158569d".
+check = "", name = "NL004-7.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="1f0c9110605dd9b3a1a3c984b640a6a0".
+check = "", name = "NL004-36.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="4fe0be7de2132cf8176ddf6631e50527".
+check = "", name = "NL004-38.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="08ade1819740af5c198557cafbe4ef3e".
+check = "", name = "NL005-32.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="d19d56a4c8118efa61337295a1eede92".
+check = "", name = "NL004-59.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="274952396f30a8304259d11285af45c6".
+check = "", name = "NL004-50.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="b531884c02cb3034509bbd7591562db4".
+check = "", name = "NL005-10.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="e02a15a6dd469350007419a54f8b1a7d".
+check = "", name = "NL004-13.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="5c5a427795b1dd43c487843ff95028dd".
+check = "", name = "NL006-31.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="b56fe9475a3f8bfde4ff02110cf2da04".
+check = "", name = "NL005-27.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="96efb4491cc05e45151d688751f1ef66".
+check = "", name = "NL004-60.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="e781600d74dd32efa70c2f8a472965d8".
+check = "", name = "NL004-11.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="d2725f3116106687735b47db1a262a66".
+check = "", name = "NL006-28.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="bfbc94b8102091730d87fbfa856300a8".
+check = "", name = "NL005-16.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="aaffe181b8b5db983ec8e9223f0f3324".
+check = "", name = "NL004-34.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="5d5b8657ad4699fe583d95c1409a3b73".
+check = "", name = "NL004-24.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="0d3727120cc4ea03d7995519bcb89617".
+check = "", name = "NL005-23.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="1d1c867b386dcc1bf0f3d797f1f8caa9".
+check = "", name = "NL004-39.dcm", relative path = "/", size in bytes = "394212", better readable size = "394 KB", checksum="0f8a75e66b1cb2b31d83bd39510061ee".
+check = "", name = "NL004-22.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="e920aacdc605ef86524a768453fbf0dd".
+check = "", name = "NL004-56.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="1701b86396c65dea9dc6f17ad732ff6c".
+check = "", name = "NL004-40.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="2254885013914d17cf68cca9c539f5d1".
+check = "", name = "NL004-8.dcm", relative path = "/", size in bytes = "394210", better readable size = "394 KB", checksum="a74b4fd8068853484f6a157f569b50c7".
+check = "", name = "NL004-44.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="b5f752969a2b7fe557a775b97fdf0bfb".
+check = "", name = "NL004-4.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="96ceb65821307a357a206b794847a866".
+check = "", name = "NL004-48.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="eec7a3a608073b20ecf1e31c57fc469c".
+check = "", name = "NL006-25.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="fd7a9dcd1bd02dfb27db7499d33df0cb".
+check = "", name = "NL005-28.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="7bfe243e3fd3e7bd6ec9f56d957b85b2".
+check = "", name = "NL006-2.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="02054430602946f1572d7d46e06f5d9c".
+check = "", name = "NL004-47.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="73e934acf098570e5a00298baac0320f".
+check = "", name = "NL004-57.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="77f983b9a25cd9fee2449bd65ff2e8a7".
+check = "", name = "NL006-16.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="4b868a31c2e816fece7f8458af33cf9c".
+check = "", name = "NL004-51.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="9533b716c6eb57f30dde4df12b99e692".
+check = "", name = "NL004-12.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="70f15331b29ab76d32daa07b132e97dc".
+check = "", name = "NL004-46.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="79054ef913e6c1c8c66d9d9c85bcd9a2".
+check = "", name = "NL006-30.dcm", relative path = "/", size in bytes = "394220", better readable size = "394 KB", checksum="30bc4bbb6f5106fda5db469e9279f7c8".
+check = "", name = "NL006-8.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="1fb364a008d82b6e3665be1c67c5b3c2".
+check = "", name = "NL005-20.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="b164697cf60e2a19331a892517622b16".
+check = "", name = "NL005-6.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="f4d432ee6502b956bb7db15ae039847c".
+check = "", name = "NL004-21.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="a8a2286e04c0b0e52514483306ff31a9".
+check = "", name = "NL004-33.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="4c392e46e5f6591806d73be1e0d026ea".
+check = "", name = "NL005-2.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="b70ccad729fb59bae6d3dba888dc637d".
+check = "", name = "NL004-53.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="eaa12fe49b162ccf7229e7631e8bc8b2".
+check = "", name = "NL005-14.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="60106ea4377345e24e98079b68ecadc1".
+check = "", name = "NL006-14.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="44ba8bc69928d21cc0be8803f651bd89".
+check = "", name = "NL004-6.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="f5d5f91647f4306a5eebd243ad45713d".
+check = "", name = "NL005-26.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="03d1dcc8585e9f2dd595f53e1ac6f94d".
+check = "", name = "NL005-3.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="e7af05a9b95d7498781f671ba1538ce2".
+check = "", name = "NL006-29.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="edc6f85ffc55e668ac3fb34e687f9240".
+check = "", name = "NL005-31.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="be5f0d43682f856121461f2d072c262d".
+check = "", name = "NL006-7.dcm", relative path = "/", size in bytes = "394220", better readable size = "394 KB", checksum="f6e849d1cf715c0c7ce46bd79bf538d2".
+check = "", name = "NL005-12.dcm", relative path = "/", size in bytes = "394184", better readable size = "394 KB", checksum="431e9ec4263f3f4d6cd2828d25cb09f9".
+check = "", name = "NL006-10.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="711017a473a8da7badb5096511ffca11".
+check = "", name = "NL004-52.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="783ac06558258c75d355f378a6198ee8".
+check = "", name = "NL005-13.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="e4d3766f833ac28bbed9402d267f65e0".
+check = "", name = "NL006-19.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="0b84650db127f8b0caecd5e17669b3ec".
+check = "", name = "NL006-21.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="a58de75a769423d124ee5f3735d272db".
+check = "", name = "NL005-11.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="5ad97cd92e87d607b3ff33c665bcbcbb".
+check = "", name = "NL006-22.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="5544344577178baf7436f78985e6fda5".
+check = "", name = "NL006-5.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="5ee8f7993b92088eedcb9a22f57b7f3e".
+check = "", name = "NL004-18.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="d74bb268e730d4dfd8c41a26a47703f4".
+check = "", name = "NL006-24.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="03633b0e6ce07fe74997b17bc6a6a60e".
+check = "", name = "NL004-20.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="67cba6d656537f15c6f26a97a66bf985".
+check = "", name = "NL006-1.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="0a060906c2821b758e73773666935c86".
+check = "", name = "NL004-9.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="76d6110bb59dc747e4ee1abbf439ac4f".
+check = "", name = "NL006-4.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="2dcf7f2b8621c2b147be718ecaea43a6".
+check = "", name = "NL005-1.dcm", relative path = "/", size in bytes = "394184", better readable size = "394 KB", checksum="21dc6fa3c3c41a0320c2a3482d4a9804".
+check = "", name = "NL004-26.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="89228c2fbed30de79f2d047020fce27e".
+check = "", name = "NL004-23.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="732ba078e900043a8f6e66b487f39336".
+check = "", name = "NL004-16.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="227aa225f4bd90dd8837dcacac5acfef".
+check = "", name = "NL004-29.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="9f0368663c2349870627f591aa82d09f".
+check = "", name = "NL005-30.dcm", relative path = "/", size in bytes = "394188", better readable size = "394 KB", checksum="9962da0d69f395905882ef8ef61d00c6".
+check = "", name = "NL004-19.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="86f799ef05977486e00468e03131b14a".
+check = "", name = "NL004-49.dcm", relative path = "/", size in bytes = "394214", better readable size = "394 KB", checksum="87106b48b3f45937c627d747cefdde0d".
+check = "", name = "NL006-13.dcm", relative path = "/", size in bytes = "394222", better readable size = "394 KB", checksum="e21991b81f86dbc7561acd394754f585".
+

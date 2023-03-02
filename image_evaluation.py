@@ -5,8 +5,9 @@ from keras.applications.inception_v3 import preprocess_input
 import sys
 
 # Own methods
-from load_data import load_data_MELUS
-from FID import scale_images, calculate_fid
+from FID_utils.FID import calculate_fid, scale_images
+import FID_utils.filters as filters # todavia no los estoy usando
+from FID_utils.load_data import load_data_MELUS
 
 
 # python3 image_evaluation.py FAKE_IMAGES_DIRECTORY

@@ -163,7 +163,7 @@ data = {"epoch" : range(1,epochs+1),
 	}	
 df = pd.DataFrame(data)
 
-df.to_csv("results.csv")
+df.to_csv("results.csv", index = False)
 
 # momentaneamente no funciona bien plt (guardo en csv)
 # plt.plot(range(1,epochs+1), d_loss_real_avg)

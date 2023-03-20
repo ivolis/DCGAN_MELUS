@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
+import os
 
 
 def load_images(folder_dir, img_rows, img_cols, channels):
@@ -29,7 +30,7 @@ def save_images(amount, folder_name, noise_dim, generator, img_rows, img_cols, c
         noise = np.random.normal(0, 1, size=(1, noise_dim))
         generated_images = generator.predict(noise, verbose = 0)   #Create the images from the GAN.    
         for i, image in enumerate(generated_images):
-            save_file_route_name = folder_name + 'generated_image_{:04d}.png'.format(k)
+            save_file_route_name = folder_name + '/generated_image_{:04d}.png'.format(k)
             if channels == 1:
                 plt.imsave(save_file_route_name, image.reshape((img_rows, img_cols))* 127.5 + 
             127.5, cmap='gray')

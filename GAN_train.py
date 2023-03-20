@@ -1,3 +1,4 @@
+
 import sys
 
 # Tensorflow and Keras
@@ -7,7 +8,6 @@ from keras.layers import Input
 from keras.models import Model
 from tensorflow.keras.optimizers import Adam
 import matplotlib.pyplot as plt
-
 
 
 # Numpy
@@ -20,8 +20,10 @@ from numpy.random import random
 import cv2
 import os
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # 0 para ver warnings cuda
+
 # Own methods
-from GAN_utils import data_management, GAN_models, results_visualization
+from GAN_utils import data_management, GAN_models
 
 #for consistency of random numbers and our images
 np.random.seed(10)  # numpy library
@@ -31,6 +33,9 @@ tf.random.set_seed(10) # tensorflow uses MOSTLY numpy, just in case.
 output_folder = str(sys.argv[2])
 if not os.path.exists(output_folder):
    os.makedirs(output_folder)
+per_epoch_visual_control_folder = os.path.join(output_folder, "per_epoch")
+os.makedirs(per_epoch_visual_control_folder)
+   
 
 
 # change the below values to the dimensions of your image. The channels number refers to the number of colors
@@ -104,22 +109,22 @@ for epoch in range(epochs):
     aux_noise = np.random.normal(0, 1, size=(5, noise_dim))
     aux_generated_images = generator.predict(aux_noise, verbose = 0)   #Create the images from the GAN.    
     for k, aux_image in enumerate(aux_generated_images):
-        save_file_route_name = output_folder + 'generated_image_{:04d}_{:02d}.png'.format(epoch,k)
+        save_file_route_name = per_epoch_visual_control_folder + '/generated_image_{:04d}_{:02d}.png'.format(epoch,k)
         plt.imsave(save_file_route_name, aux_image.reshape((img_rows, img_cols))* 127.5 + 
         127.5, cmap = 'gray')
     
     for batch in range(steps_per_epoch):
-        
+
         # Entreno discriminador
         noise = np.random.normal(0, 1, size=(batch_size, noise_dim))
         fake_x = generator.predict(noise, verbose = 0)
 
         real_x = x_train[np.random.randint(0, x_train.shape[0], size=batch_size)]
-        
+
         # One Sided Label smoothing: real = [0.9 - 1.1] and fake = 0
         d_loss_fake, d_acc_fake = discriminator.train_on_batch(fake_x, np.zeros(batch_size))
         d_loss_real, d_acc_real = discriminator.train_on_batch(real_x, np.ones(batch_size))
-        
+
         d_loss = (d_loss_real + d_loss_fake) / 2. # lo dejo solo para el print del final
         #d_loss_step[batch] = d_loss
         d_loss_real_step[batch] = d_loss_real
@@ -127,7 +132,7 @@ for epoch in range(epochs):
 
         d_acc_real_step[batch] = d_acc_real
         d_acc_fake_step[batch] = d_acc_fake
-        
+
         # Entreno generador
         y_gen = np.ones(batch_size)
         g_loss = gan.train_on_batch(noise, y_gen)
@@ -145,21 +150,37 @@ for epoch in range(epochs):
 
 
 # Guardo los resultados de la corrida
-plt.plot(range(1,epochs+1), d_loss_real_avg)
-plt.plot(range(1,epochs+1), d_loss_fake_avg)
-plt.plot(range(1,epochs+1), g_loss_avg)
-plt.xlim([1, epochs])
-plt.legend(['discriminator real loss', 'discriminator fake loss', 'generator loss'])
-plt.grid()
-plt.savefig('loss.png', bbox_inches='tight')
+
+# Guardo los resultados de la corrida
+import pandas as pd
+
+data = {"epoch" : range(1,epochs+1),
+	"discriminator_loss_real": d_loss_real_avg,
+	"discriminator_loss_fake": d_loss_fake_avg,
+	"generator_loss": g_loss_avg,
+	"discriminator_acc_real": d_acc_real_avg,
+	"discriminator_acc_fake": d_acc_fake_avg,
+	}	
+df = pd.DataFrame(data)
+
+df.to_csv("results.csv")
+
+# momentaneamente no funciona bien plt (guardo en csv)
+# plt.plot(range(1,epochs+1), d_loss_real_avg)
+# plt.plot(range(1,epochs+1), d_loss_fake_avg)
+# plt.plot(range(1,epochs+1), g_loss_avg)
+# plt.xlim([1, epochs])
+# plt.legend(['discriminator real loss', 'discriminator fake loss', 'generator loss'])
+# plt.grid()
+# plt.savefig('loss.png', bbox_inches='tight')
 
 
-plt.plot(range(1,epochs+1), d_acc_real_avg)
-plt.plot(range(1,epochs+1), d_acc_fake_avg)
-plt.xlim([1, epochs])
-plt.legend(['discriminator real acc', 'discriminator fake acc'])
-plt.grid()
-plt.savefig('acc.png', bbox_inches='tight')
+# plt.plot(range(1,epochs+1), d_acc_real_avg)
+# plt.plot(range(1,epochs+1), d_acc_fake_avg)
+# plt.xlim([1, epochs])
+# plt.legend(['discriminator real acc', 'discriminator fake acc'])
+# plt.grid()
+# plt.savefig('acc.png', bbox_inches='tight')
 
 
 # Guardo las imagenes

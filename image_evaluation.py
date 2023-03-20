@@ -3,6 +3,9 @@ from numpy.random import shuffle
 from keras.applications.inception_v3 import InceptionV3
 from keras.applications.inception_v3 import preprocess_input
 import sys
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # 0 para ver warnings cuda
 
 # Own methods
 from FID_utils.FID import calculate_fid, scale_images

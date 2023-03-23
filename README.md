@@ -38,7 +38,7 @@ python3 image_evaluation.py DB_LUS4MELUS/tif/ generated_test
 
 ## Loss and Accuracy plot
 
-This code will just save two PNG images of the Loss and Accuracy plot.
+This code will just save two PNG images of the Loss and Accuracy plot using the CSV generated on the training process.
 
 Execution (WSL): 
 ```

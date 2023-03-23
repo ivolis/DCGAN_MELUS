@@ -10,14 +10,14 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # 0 para ver warnings cuda
 # Own methods
 from FID_utils.FID import calculate_fid, scale_images
 import FID_utils.filters as filters # todavia no los estoy usando
-from FID_utils.load_data import load_data_MELUS
+from FID_utils.load_data import load_data_from_dirs
 
 
 # python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
 real_dir = str(sys.argv[1])
 fake_dir = str(sys.argv[2])
 
-images1, images2 = load_data_MELUS(real_dir, fake_dir)
+images1, images2 = load_data_from_dirs(real_dir, fake_dir)
 
 # prepare the inception v3 model
 model = InceptionV3(include_top=False, pooling='avg', input_shape=(299,299,3))

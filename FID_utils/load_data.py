@@ -5,7 +5,7 @@ import cv2
 
 
 
-def load_data_MELUS(real_dir, fake_dir):
+def load_data_from_dirs(real_dir, fake_dir):
   
     # LUS_img_type = "nCOVID"
     # real_img_filename_start = "nNL"
@@ -13,8 +13,8 @@ def load_data_MELUS(real_dir, fake_dir):
 
     
 
-    real_filenames = [file_name for file_name in os.listdir(real_dir) if file_name.startswith("nNL")]
-    fake_filenames = [file_name for file_name in os.listdir(fake_dir) if file_name.startswith("generated_image")]
+    real_filenames = [file_name for file_name in os.listdir(real_dir)]
+    fake_filenames = [file_name for file_name in os.listdir(fake_dir)]
     # agarro dos imagenes random para no hc height y width
     real_aux_img = cv2.imread(real_dir + real_filenames[0])
     fake_aux_img = cv2.imread(fake_dir + fake_filenames[0])

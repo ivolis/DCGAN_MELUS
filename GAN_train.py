@@ -165,23 +165,6 @@ df = pd.DataFrame(data)
 
 df.to_csv("results.csv", index = False)
 
-# momentaneamente no funciona bien plt (guardo en csv)
-# plt.plot(range(1,epochs+1), d_loss_real_avg)
-# plt.plot(range(1,epochs+1), d_loss_fake_avg)
-# plt.plot(range(1,epochs+1), g_loss_avg)
-# plt.xlim([1, epochs])
-# plt.legend(['discriminator real loss', 'discriminator fake loss', 'generator loss'])
-# plt.grid()
-# plt.savefig('loss.png', bbox_inches='tight')
-
-
-# plt.plot(range(1,epochs+1), d_acc_real_avg)
-# plt.plot(range(1,epochs+1), d_acc_fake_avg)
-# plt.xlim([1, epochs])
-# plt.legend(['discriminator real acc', 'discriminator fake acc'])
-# plt.grid()
-# plt.savefig('acc.png', bbox_inches='tight')
-
 
 # Guardo las imagenes
 data_management.save_images(int(sys.argv[3]), output_folder, noise_dim, generator, img_rows, img_cols, channels)

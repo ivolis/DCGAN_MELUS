@@ -13,9 +13,9 @@ import FID_utils.filters as filters # todavia no los estoy usando
 from FID_utils.load_data import load_data_MELUS
 
 
-# python3 image_evaluation.py FAKE_IMAGES_DIRECTORY
-real_dir = "DB LUS4MELUS/tif/"
-fake_dir = str(sys.argv[1])
+# python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
+real_dir = str(sys.argv[1])
+fake_dir = str(sys.argv[2])
 
 images1, images2 = load_data_MELUS(real_dir, fake_dir)
 

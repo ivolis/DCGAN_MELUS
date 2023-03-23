@@ -31,7 +31,7 @@ def load_data_MELUS(real_dir, fake_dir):
     # real
     for img_id,i in zip(real_filenames,range(len(real_filenames))):
       img_uri = real_dir + img_id
-      print("Subiendo imagen real %5d de %5d " % (i,len(real_filenames)))
+      #print("Subiendo imagen real %5d de %5d " % (i,len(real_filenames)))
       img = cv2.imread(img_uri)
       x_real[i] = img
       clear_output(True)
@@ -39,7 +39,7 @@ def load_data_MELUS(real_dir, fake_dir):
     # fake
     for img_id,i in zip(fake_filenames,range(len(fake_filenames))):
       img_uri = fake_dir + img_id
-      print("Subiendo imagen falsa %5d de %5d " % (i,len(fake_filenames)))
+      #print("Subiendo imagen falsa %5d de %5d " % (i,len(fake_filenames)))
       img = cv2.imread(img_uri)
       x_fake[i] = img
       clear_output(True)

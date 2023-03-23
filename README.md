@@ -36,6 +36,15 @@ python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
 python3 image_evaluation.py DB_LUS4MELUS/tif/ generated_test
 ```
 
+## Loss and Accuracy plot
+
+This code will just save two PNG images of the Loss and Accuracy plot.
+
+Execution (WSL): 
+```
+python3 results_plot.py
+```
+
 ## Additional Notes
 
 1. "Fake images" must start with "generated_image".

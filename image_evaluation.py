@@ -17,6 +17,7 @@ from FID_utils.load_data import load_data_from_dirs
 real_dir = str(sys.argv[1])
 fake_dir = str(sys.argv[2])
 
+# loading the images
 images1, images2 = load_data_from_dirs(real_dir, fake_dir)
 
 # prepare the inception v3 model
@@ -36,7 +37,7 @@ images1 = scale_images(images1, (299,299,3))
 images2 = scale_images(images2, (299,299,3))
 print('Scaled', images1.shape, images2.shape)
 
-# pre-process images
+# pre-process images for inceptionV3 model
 images1 = preprocess_input(images1)
 images2 = preprocess_input(images2)
 

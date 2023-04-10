@@ -39,7 +39,7 @@ os.makedirs(per_epoch_visual_control_folder)
 
 
 # change the below values to the dimensions of your image. The channels number refers to the number of colors
-img_rows, img_cols, channels = 128, 128, 1
+img_rows, img_cols, channels = 128, 128, 1 # LUS -> greyscale, so channels = 1
 
 
 # Load training data (meter en funcion)

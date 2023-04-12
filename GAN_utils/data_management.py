@@ -6,7 +6,7 @@ import os
 
 def load_images(folder_dir, img_rows, img_cols, channels):
 
-    relevant_files = [file_name for file_name in os.listdir(folder_dir)]
+    relevant_files = [file_name for file_name in os.listdir(folder_dir) if os.path.isfile(os.path.join(folder_dir, file_name))]
     total_images = len(relevant_files)
 
     x_train = np.empty(shape=(total_images, img_rows, img_cols))

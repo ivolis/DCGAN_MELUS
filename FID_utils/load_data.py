@@ -7,8 +7,8 @@ import cv2
 def load_data_from_dirs(real_dir, fake_dir):
     
 
-    real_filenames = [file_name for file_name in os.listdir(real_dir)]
-    fake_filenames = [file_name for file_name in os.listdir(fake_dir)]
+    real_filenames = [file_name for file_name in os.listdir(real_dir) if os.path.isfile(os.path.join(real_dir, file_name))]
+    fake_filenames = [file_name for file_name in os.listdir(fake_dir) if os.path.isfile(os.path.join(fake_dir, file_name))]
 
     # loading an image in order to avoid hard-coding the heigh, width and channel
     real_aux_img = cv2.imread(real_dir + real_filenames[0])

@@ -7,15 +7,16 @@ from tensorflow.keras.optimizers import Adam
 
 # GENERATOR #
 def create_generator_cgan(noise_dim, channels):
-    generator = Sequential()
     
-    d = 32
+    generator = Sequential()
+
+    d = 16
     generator.add(Dense(d*d*256, kernel_initializer=RandomNormal(0, 0.02), input_dim=noise_dim))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
-    
+
     generator.add(Reshape((d, d, 256)))
-    
+
     generator.add(Conv2DTranspose(128, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
@@ -23,9 +24,13 @@ def create_generator_cgan(noise_dim, channels):
     generator.add(Conv2DTranspose(128, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
-    
 
-    
+    generator.add(Conv2DTranspose(64, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    generator.add(BatchNormalization())
+    generator.add(LeakyReLU(0.2))
+
+
+
     generator.add(Conv2D(channels, (3, 3), padding='same', activation='tanh', kernel_initializer=RandomNormal(0, 0.02))) 
 
     return generator

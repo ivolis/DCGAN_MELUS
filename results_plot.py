@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load CSV file into a pandas DataFrame
-df = pd.read_csv("./results.csv")
+df = pd.read_csv("results.csv")
 
 # Access columns by name
 epochs = df["epoch"]

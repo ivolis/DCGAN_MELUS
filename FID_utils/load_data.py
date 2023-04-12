@@ -25,14 +25,14 @@ def load_data_from_dirs(real_dir, fake_dir):
     # real
     print("Loading real images")
     for img_id,i in zip(real_filenames,range(len(real_filenames))):
-      img_uri = real_dir + img_id
+      img_uri = os.path.join(real_dir, img_id)
       img = cv2.imread(img_uri)
       x_real[i] = img
 
     # fake
     print("Loading fake images")
     for img_id,i in zip(fake_filenames,range(len(fake_filenames))):
-      img_uri = fake_dir + img_id
+      img_uri = os.path.join(fake_dir, img_id)
       img = cv2.imread(img_uri)
       x_fake[i] = img
 

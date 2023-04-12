@@ -109,7 +109,7 @@ for epoch in range(epochs):
     aux_noise = np.random.normal(0, 1, size=(5, noise_dim))
     aux_generated_images = generator.predict(aux_noise, verbose = 0)   #Create the images from the GAN.    
     for k, aux_image in enumerate(aux_generated_images):
-        save_file_route_name = per_epoch_visual_control_folder + '/generated_image_{:04d}_{:02d}.png'.format(epoch,k)
+        save_file_route_name = os.path.join(per_epoch_visual_control_folder , 'generated_image_{:04d}_{:02d}.png'.format(epoch,k))
         plt.imsave(save_file_route_name, aux_image.reshape((img_rows, img_cols))* 127.5 + 
         127.5, cmap = 'gray')
     
@@ -167,4 +167,5 @@ df.to_csv("results.csv", index = False)
 
 
 # Guardo las imagenes
-data_management.save_images(int(sys.argv[3]), output_folder, noise_dim, generator, img_rows, img_cols, channels)
+save_imgs_amount = int(sys.argv[3])
+data_management.save_images(save_imgs_amount, output_folder, noise_dim, generator, img_rows, img_cols, channels)

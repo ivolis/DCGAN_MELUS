@@ -16,7 +16,7 @@ python3 GAN_train.py TRAIN_IMAGES_DIRECTORY OUTPUT_FAKE_IMAGES_DIRECTORY AMOUNT
 **Example**
 
 ```
-python3 GAN_train.py DB_LUS4MELUS/tif/normal/ generated_test 3000
+python3 GAN_train.py DB_LUS4MELUS/tif/normal generated_test 3000
 ```
 
 ## FID calculation
@@ -33,7 +33,7 @@ python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
 **Example**
 
 ```
-python3 image_evaluation.py DB_LUS4MELUS/tif/normal/ generated_test
+python3 image_evaluation.py DB_LUS4MELUS/tif/normal generated_test
 ```
 
 ## Loss and Accuracy plot

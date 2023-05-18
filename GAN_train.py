@@ -169,3 +169,6 @@ df.to_csv("results.csv", index = False)
 # Guardo las imagenes
 save_imgs_amount = int(sys.argv[3])
 data_management.save_images(save_imgs_amount, output_folder, noise_dim, generator, img_rows, img_cols, channels)
+
+# Guardo el modelo del generador y sus pesos para uso futuro
+generator.save("generator_" + output_folder + ".h5")

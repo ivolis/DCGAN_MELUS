@@ -42,7 +42,7 @@ python3 load_generator.py GEN_FILE_NAME AMOUNT
 **Example**
 
 ```
-python3 GAN_train.py generator_generated_test.h5 1000
+python3 load_generator.py generator_generated_test.h5 1000
 ```
 
 ## FID calculation

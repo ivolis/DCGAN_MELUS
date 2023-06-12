@@ -17,21 +17,21 @@ def create_generator_cgan(noise_dim, channels):
 
     generator.add(Reshape((d, d, 256)))
 
-    generator.add(Conv2DTranspose(128, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    generator.add(Conv2DTranspose(128, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
 
-    generator.add(Conv2DTranspose(128, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    generator.add(Conv2DTranspose(128, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
 
-    generator.add(Conv2DTranspose(64, (4, 4), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    generator.add(Conv2DTranspose(64, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     generator.add(BatchNormalization())
     generator.add(LeakyReLU(0.2))
 
 
 
-    generator.add(Conv2D(channels, (3, 3), padding='same', activation='tanh', kernel_initializer=RandomNormal(0, 0.02))) 
+    generator.add(Conv2D(channels, (5, 5), padding='same', activation='tanh', kernel_initializer=RandomNormal(0, 0.02))) 
 
     return generator
 
@@ -45,19 +45,19 @@ def create_discriminator_cgan(img_cols, img_rows, channels):
 
     discriminator = Sequential()
     
-    discriminator.add(Conv2D(64, (3, 3), padding='same', kernel_initializer=RandomNormal(0, 0.02), input_shape=(img_cols, img_rows, channels)))
+    discriminator.add(Conv2D(64, (5, 5), padding='same', kernel_initializer=RandomNormal(0, 0.02), input_shape=(img_cols, img_rows, channels)))
     discriminator.add(BatchNormalization())
     discriminator.add(LeakyReLU(0.2))
     
-    discriminator.add(Conv2D(128, (3, 3), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    discriminator.add(Conv2D(128, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     discriminator.add(BatchNormalization())
     discriminator.add(LeakyReLU(0.2))
     
-    discriminator.add(Conv2D(128, (3, 3), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    discriminator.add(Conv2D(128, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     discriminator.add(BatchNormalization())
     discriminator.add(LeakyReLU(0.2))
     
-    discriminator.add(Conv2D(256, (3, 3), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
+    discriminator.add(Conv2D(256, (5, 5), strides=2, padding='same', kernel_initializer=RandomNormal(0, 0.02)))
     discriminator.add(BatchNormalization())
     discriminator.add(LeakyReLU(0.2))
     

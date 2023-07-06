@@ -45,11 +45,11 @@ python3 load_generator.py GEN_FILE_NAME AMOUNT
 python3 load_generator.py generator_generated_test.h5 1000
 ```
 
-## FID calculation
+## FID and KID evaluation
 
-This code will calculate the FID between 2 set of images, so you can compare the generated images within `FAKE_IMAGES_DIRECTORY` against the real ones in `REAL_IMAGES_DIRECTORY`.
+This code will calculate the FID and KID between 2 set of images, so you can compare the generated images within `FAKE_IMAGES_DIRECTORY` against the real ones in `REAL_IMAGES_DIRECTORY`.
 
-(*Note: The resulting FID number will be displayed on the terminal*)
+(*Note: The resulting FID/KID numbers will be displayed on the terminal*)
 
 Execution (WSL): 
 ```
@@ -73,5 +73,7 @@ python3 results_plot.py
 
 ## Additional Notes
 
-1. "Fake images" must start with "generated_image".
-2. version, hw, etc (COMPLETAR)
+1. It is strongly recommended that the directories used for evaluation only contain the images necessary.
+2. KID numbers make more sense comparing an equal amount of samples for each group. 
+3. Made in Tensorflow 2.1.0 (Keras 2.2.4-tf)
+4. Requirements and hardware (WIP)

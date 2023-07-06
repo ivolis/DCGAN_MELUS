@@ -41,7 +41,7 @@ def calculate_kid(act1,act2):
     gram_1 = polynomial_kernel(act1, degree=3,coef0=1) # kernel
     gram_1 = gram_1 - np.diag(np.diagonal(gram_1)) # en la sumatoria i=/=j (resto su diagonal)
 
-    gram_2 = polynomial_kernel(act1, degree=3,coef0=1)
+    gram_2 = polynomial_kernel(act2, degree=3,coef0=1)
     gram_2 = gram_2 - np.diag(np.diagonal(gram_2))
 
     sum_1 = np.sum(gram_1)

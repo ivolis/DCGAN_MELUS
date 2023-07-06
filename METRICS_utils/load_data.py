@@ -1,7 +1,18 @@
 import numpy as np
 import os
 import cv2
+from skimage.transform import resize
+from numpy import asarray
 
+
+def scale_images(images, new_shape):
+    images_list = list()
+    for image in images:
+        # resize with nearest neighbor interpolation
+        new_image = resize(image, new_shape, 0)
+        # store
+        images_list.append(new_image)
+    return asarray(images_list)
 
 
 def load_data_from_dirs(real_dir, fake_dir):

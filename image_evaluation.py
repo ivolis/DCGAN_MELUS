@@ -8,9 +8,10 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # 0 para ver warnings cuda
 
 # Own methods
-from FID_utils.FID import calculate_fid, scale_images
-import FID_utils.filters as filters # todavia no los estoy usando
-from FID_utils.load_data import load_data_from_dirs
+from METRICS_utils.metrics import calculate_metrics
+import METRICS_utils.filters as filters # todavia no los estoy usando
+from METRICS_utils.load_data import load_data_from_dirs, scale_images
+
 
 
 # python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
@@ -42,5 +43,6 @@ images1 = preprocess_input(images1)
 images2 = preprocess_input(images2)
 
 # calculate fid
-fid = calculate_fid(model, images1, images2)
+fid, kid = calculate_metrics(model, images1, images2)
 print('FID: %.3f' % fid)
+print('KID: %.3f' % kid)

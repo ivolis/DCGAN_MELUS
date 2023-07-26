@@ -1,0 +1,13 @@
+Me quede con las ultimas o primeras 30 de los que tenian mas de 30.
+
+En todas me quede con las primeras menos en:
+COVID003
+
+
+A B y C, etc se toman como "pacientes distintos" (dias distintos o pulmones distintos)
+
+upper y lower separo A y B tal que A-lower y B-upper (podria haber sido A-upper y B-lower).
+
+COVID008A fuera del grupo "COVID"
+
+COVID008E left right 2 pacientes distintos (son distintos pulmones)

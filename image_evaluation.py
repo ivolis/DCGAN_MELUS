@@ -10,7 +10,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # 0 para ver warnings cuda
 # Own methods
 from METRICS_utils.metrics import calculate_metrics
 import METRICS_utils.filters as filters # todavia no los estoy usando
-from METRICS_utils.load_data import load_data_from_dirs, scale_images
+from METRICS_utils.load_data import load_data_from_dirs
 
 from PIL import Image
 

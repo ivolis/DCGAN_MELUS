@@ -12,14 +12,14 @@ from METRICS_utils.metrics import calculate_metrics
 import METRICS_utils.filters as filters # todavia no los estoy usando
 from METRICS_utils.load_data import load_data_from_dirs, scale_images
 
-
+from PIL import Image
 
 # python3 image_evaluation.py REAL_IMAGES_DIRECTORY FAKE_IMAGES_DIRECTORY
 real_dir = str(sys.argv[1])
 fake_dir = str(sys.argv[2])
 
 # loading the images
-images1, images2 = load_data_from_dirs(real_dir, fake_dir)
+images1, images2 = load_data_from_dirs(real_dir, fake_dir, True, (299,299,3))
 
 # prepare the inception v3 model
 model = InceptionV3(include_top=False, pooling='avg', input_shape=(299,299,3))
@@ -32,11 +32,6 @@ print('Loaded', images1.shape, images2.shape)
 # convert integer to floating point values
 images1 = images1.astype('float32')
 images2 = images2.astype('float32')
-
-# resize images
-images1 = scale_images(images1, (299,299,3))
-images2 = scale_images(images2, (299,299,3))
-print('Scaled', images1.shape, images2.shape)
 
 # pre-process images for inceptionV3 model
 images1 = preprocess_input(images1)
